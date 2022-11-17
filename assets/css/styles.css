@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scrollbar-width: 0;
+}
+body h1 {
+  font-family: "Squada One", cursive;
+  font-size: 3em !important;
+}
+
+.font {
+  font-family: "Black Ops One", cursive;
+}
+
+/*Section one */
+.icon-section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #FEFFDE;
+}
+
+/*HEADER*/
+.head-banner {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: url(/imgs/n2.jpg) #a3a3a3 no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: color-burn;
+  background-attachment: fixed;
+}
+.head-banner .main-title {
+  font-family: "Squada One", cursive;
+  letter-spacing: 0;
+  font-size: 90px !important;
+}
+.head-banner .gian {
+  color: #d4ee3f;
+  text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+}
+
+.bgc {
+  background-color: #bdbdbd;
+}
+
+.display-images .imgs {
+  min-height: 30rem;
+}
+.display-images .txt {
+  padding: 3rem;
+}
+
+/*SVGs */
+.imgwrk {
+  background: url(/imgs/undraw_digital_nomad_re_w8uy.svg) no-repeat transparent;
+  background-size: contain;
+  background-position: center;
+  width: 200px;
+  height: 300px;
+}
+
+.imgprg {
+  background: url(/imgs/undraw_progress_overview_re_tvcl.svg) no-repeat transparent;
+  background-size: contain;
+  background-position: center;
+  width: 200px;
+  height: 300px;
+}
+
+/*Works imgs*/
+.work {
+  background: #DDFFBC;
+  background: linear-gradient(to bottom, #212529 0%, #0f4233 100%);
+}
+.work img {
+  width: 100%;
+}
+
+/*Button*/
+.btn {
+  border: 2px solid rgb(82, 82, 82) !important;
+}
+
+.prgss {
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  border-radius: 0 !important;
+  background: #91C788;
+  background: linear-gradient(to bottom, #0f4233 0%, #2585c6 100%);
+}
+
+.vio {
+  color: #6d6d6d;
+}
+
+.contacts {
+  background: url(/imgs/cnt.png) no-repeat transparent;
+  background-position: center;
+  background-size: cover;
+}
+
+.animate-charcter {
+  background-image: linear-gradient(-225deg, #c2c2c2 30%, #ffffff 50%, #ffffff 70%, #c2c2c2 100%) !important;
+  background-size: auto auto !important;
+  background-clip: border-box !important;
+  background-size: 200% auto !important;
+  color: #fff !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-animation: textclip 3s linear infinite !important;
+          animation: textclip 3s linear infinite !important;
+}
+
+.blr {
+  filter: blur(2px);
+  transition: linear 0.8s;
+  border-radius: 50%;
+}
+
+.blr:hover {
+  filter: blur(0);
+}
+
+label {
+  font-size: 2em;
+}
+
+.bg1 {
+  background-color: #DDFFBC;
+}
+
+@-webkit-keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: rgba(254, 255, 222, 0.4196078431);
+}
+
+/* Animation */
+.parallax > use {
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+@-webkit-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+@media screen and (min-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 2em !important;
+  }
+  .head-banner {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  .display-images .txt {
+    padding: 7rem;
+  }
+  .main-title {
+    font-size: 2rem !important;
+  }
+}/*# sourceMappingURL=styles.css.map */
