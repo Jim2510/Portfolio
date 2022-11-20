@@ -12,39 +12,93 @@ body {
   scrollbar-width: 0;
 }
 body h1 {
-  font-family: "Squada One", cursive;
   font-size: 3em !important;
 }
 
+.texthover {
+  color: white;
+  transition: ease-in 0.3s;
+  border-radius: 50%;
+}
+
+.iconhover:hover {
+  color: #d4ee3f;
+  transition: color 0.3s;
+}
+
+.texthover:hover {
+  background: #D4EE3F;
+  background: -moz-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
+  background: -webkit-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
+  background: radial-gradient(ellipse at center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
+  color: #000000;
+  -webkit-box-shadow: 0px 0px 10px 5px #00000096;
+  box-shadow: 0px 0px 10px 5px #00000096;
+}
+
+.texthover:active {
+  -webkit-box-shadow: inset 0px 0px 10px 5px #000000;
+  box-shadow: inset 0px 0px 10px 5px #000000;
+}
+
+.bnc {
+  color: #000000;
+  transition: ease-in 0.3s;
+  border-radius: 50%;
+}
+
+.bnc:hover {
+  background: #D4EE3F;
+  background: -moz-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
+  background: -webkit-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
+  background: radial-gradient(ellipse at center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
+  -webkit-box-shadow: 0px 0px 10px 5px #00000096;
+  box-shadow: 0px 0px 10px 5px #00000096;
+}
+
+.bnc:active {
+  -webkit-box-shadow: inset 0px 0px 10px 5px #000000;
+  box-shadow: inset 0px 0px 10px 5px #000000;
+}
+
 .font {
-  font-family: "Black Ops One", cursive;
+  font-family: "Rubik", sans-serif;
 }
 
 /*Section one */
 .icon-section {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  background-color: #FEFFDE;
+  background-color: #ffffff;
 }
 
 /*HEADER*/
 .head-banner {
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: url(/imgs/n2.jpg) #a3a3a3 no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: color-burn;
+  background: #bdbdbd;
+  background: linear-gradient(to right, #005bc4 0%, #02dbb3 19%, #c9791d 40%, #f5be3e 60%, #aa0b8d 83%, #005bc4 100%);
+  background-size: 10000px 100%;
+  animation: head-banner 15s linear infinite;
   background-attachment: fixed;
+  background-blend-mode: color-burn;
 }
-.head-banner .main-title {
-  font-family: "Squada One", cursive;
+
+@keyframes head-banner {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 10000px;
+  }
+}
+.main-title {
   letter-spacing: 0;
-  font-size: 90px !important;
+  font-size: 45px !important;
 }
-.head-banner .gian {
-  color: #d4ee3f;
-  text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+
+.gian {
+  color: #b4ee14 !important;
 }
 
 .bgc {
@@ -67,6 +121,19 @@ body h1 {
   height: 300px;
 }
 
+.buttonGit {
+  border: 3px black solid;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.buttonGit:hover {
+  color: black;
+  background: #d4ee3f;
+  transition: ease 0.3s;
+}
+
 .imgprg {
   background: url(/imgs/undraw_progress_overview_re_tvcl.svg) no-repeat transparent;
   background-size: contain;
@@ -77,10 +144,7 @@ body h1 {
 
 /*Works imgs*/
 .work {
-  background: #DDFFBC;
-  background: -moz-linear-gradient(top, #212529 0%, #0f4233 100%);
-  background: -webkit-linear-gradient(top, #212529 0%, #0f4233 100%);
-  background: linear-gradient(to bottom, #212529 0%, #0f4233 100%);
+  background: #fff;
 }
 .work img {
   width: 100%;
@@ -94,20 +158,11 @@ body h1 {
 .prgss {
   height: fit-content !important;
   border-radius: 0 !important;
-  background: #91C788;
-  background: -moz-linear-gradient(top, #0f4233 0%, #2585c6 100%);
-  background: -webkit-linear-gradient(top, #0f4233 0%, #2585c6 100%);
-  background: linear-gradient(to bottom, #0f4233 0%, #2585c6 100%);
+  background: #fff;
 }
 
 .vio {
   color: #6d6d6d;
-}
-
-.contacts {
-  background: url(/imgs/cnt.png) no-repeat transparent;
-  background-position: center;
-  background-size: cover;
 }
 
 .animate-charcter {
@@ -195,6 +250,20 @@ label {
     transform: translate3d(85px, 0, 0);
   }
 }
+.bordertxt {
+  border: none;
+  transition: color 0.5s;
+  border-top: 3px solid transparent !important;
+  border-right: 3px solid transparent !important;
+  border-left: 3px solid transparent !important;
+  border-bottom: 3px solid transparent !important;
+  box-shadow: none !important;
+}
+
+.bordertxt:hover {
+  border-bottom: 3px solid #d4ee3f !important;
+}
+
 @media screen and (min-width: 768px) {
   .waves {
     height: 40px;
@@ -203,10 +272,6 @@ label {
 
   .content {
     height: 30vh;
-  }
-
-  h1 {
-    font-size: 2em !important;
   }
 
   .head-banner {
@@ -219,6 +284,6 @@ label {
   }
 
   .main-title {
-    font-size: 2rem !important;
+    font-size: 4rem !important;
   }
 }
