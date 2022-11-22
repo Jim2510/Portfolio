@@ -10,23 +10,26 @@ html {
 
 body {
   scrollbar-width: 0;
+  /*Section one */
+  /*HEADER*/
+  /*SVGs */
+  /*Works imgs*/
+  /*Button*/
+  /* Animation */
 }
 body h1 {
   font-size: 3em !important;
 }
-
-.texthover {
+body .texthover {
   color: white;
   transition: ease-in 0.3s;
   border-radius: 50%;
 }
-
-.iconhover:hover {
+body .iconhover:hover {
   color: #d4ee3f;
   transition: color 0.3s;
 }
-
-.texthover:hover {
+body .texthover:hover {
   background: #D4EE3F;
   background: -moz-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
   background: -webkit-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
@@ -35,19 +38,16 @@ body h1 {
   -webkit-box-shadow: 0px 0px 10px 5px #00000096;
   box-shadow: 0px 0px 10px 5px #00000096;
 }
-
-.texthover:active {
+body .texthover:active {
   -webkit-box-shadow: inset 0px 0px 10px 5px #000000;
   box-shadow: inset 0px 0px 10px 5px #000000;
 }
-
-.bnc {
+body .bnc {
   color: #000000;
   transition: ease-in 0.3s;
   border-radius: 50%;
 }
-
-.bnc:hover {
+body .bnc:hover {
   background: #D4EE3F;
   background: -moz-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
   background: -webkit-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
@@ -55,25 +55,19 @@ body h1 {
   -webkit-box-shadow: 0px 0px 10px 5px #00000096;
   box-shadow: 0px 0px 10px 5px #00000096;
 }
-
-.bnc:active {
+body .bnc:active {
   -webkit-box-shadow: inset 0px 0px 10px 5px #000000;
   box-shadow: inset 0px 0px 10px 5px #000000;
 }
-
-.font {
+body .font {
   font-family: "Rubik", sans-serif;
 }
-
-/*Section one */
-.icon-section {
+body .icon-section {
   padding-top: 7rem;
   padding-bottom: 7rem;
   background-color: #ffffff;
 }
-
-/*HEADER*/
-.head-banner {
+body .head-banner {
   padding-top: 8rem;
   padding-bottom: 8rem;
   background: #bdbdbd;
@@ -83,7 +77,6 @@ body h1 {
   background-attachment: fixed;
   background-blend-mode: color-burn;
 }
-
 @keyframes head-banner {
   0% {
     background-position-x: 0;
@@ -92,80 +85,65 @@ body h1 {
     background-position-x: 10000px;
   }
 }
-.main-title {
+body .main-title {
   letter-spacing: 0;
   font-size: 45px !important;
 }
-
-.gian {
+body .gian {
   color: #b4ee14 !important;
 }
-
-.bgc {
+body .bgc {
   background-color: #bdbdbd;
 }
-
-.display-images .imgs {
+body .display-images .imgs {
   min-height: 30rem;
 }
-.display-images .txt {
+body .display-images .txt {
   padding: 3rem;
 }
-
-/*SVGs */
-.imgwrk {
+body .imgwrk {
   background: url(/imgs/undraw_digital_nomad_re_w8uy.svg) no-repeat transparent;
   background-size: contain;
   background-position: center;
   width: 200px;
   height: 300px;
 }
-
-.buttonGit {
+body .buttonGit {
   border: 3px black solid;
   border-radius: 20px;
   color: black;
   text-decoration: none;
 }
-
-.buttonGit:hover {
+body .buttonGit:hover {
   color: black;
   background: #d4ee3f;
   transition: ease 0.3s;
 }
-
-.imgprg {
+body .imgprg {
   background: url(/imgs/undraw_progress_overview_re_tvcl.svg) no-repeat transparent;
   background-size: contain;
   background-position: center;
   width: 200px;
   height: 300px;
 }
-
-/*Works imgs*/
-.work {
+body .work {
   background: #fff;
 }
-.work img {
+body .work img {
   width: 100%;
 }
-
-/*Button*/
-.btn {
+body .btn {
   border: 2px solid #525252 !important;
 }
-
-.prgss {
+body .prgss {
   height: fit-content !important;
   border-radius: 0 !important;
   background: #fff;
 }
-
-.vio {
+body .vio {
   color: #6d6d6d;
 }
-
-.animate-charcter {
+body .animate-charcter {
   background-image: linear-gradient(-225deg, #c2c2c2 30%, #ffffff 50%, #ffffff 70%, #c2c2c2 100%) !important;
   background-size: auto auto !important;
   background-clip: border-box !important;
@@ -176,31 +154,26 @@ body h1 {
   -webkit-text-fill-color: transparent !important;
   animation: textclip 3s linear infinite !important;
 }
-
-.blr {
+body .blr {
   filter: blur(2px);
   transition: linear 0.8s;
   border-radius: 50%;
 }
-
-.blr:hover {
+body .blr:hover {
   filter: blur(0);
 }
-
-label {
+body label {
   font-size: 2em;
 }
-
-.bg1 {
+body .bg1 {
   background-color: #DDFFBC;
 }
-
 @keyframes textclip {
   to {
     background-position: 200% center;
   }
 }
-.waves {
+body .waves {
   position: relative;
   width: 100%;
   height: 15vh;
@@ -209,39 +182,31 @@ label {
   min-height: 100px;
   max-height: 150px;
 }
-
-.content {
+body .content {
   position: relative;
   height: 20vh;
   text-align: center;
   background-color: #feffde6b;
 }
-
-/* Animation */
-.parallax > use {
+body .parallax > use {
   animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
-
-.parallax > use:nth-child(1) {
+body .parallax > use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 7s;
 }
-
-.parallax > use:nth-child(2) {
+body .parallax > use:nth-child(2) {
   animation-delay: -3s;
   animation-duration: 10s;
 }
-
-.parallax > use:nth-child(3) {
+body .parallax > use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 13s;
 }
-
-.parallax > use:nth-child(4) {
+body .parallax > use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 20s;
 }
-
 @keyframes move-forever {
   0% {
     transform: translate3d(-90px, 0, 0);
@@ -250,7 +215,7 @@ label {
     transform: translate3d(85px, 0, 0);
   }
 }
-.bordertxt {
+body .bordertxt {
   border: none;
   transition: color 0.5s;
   border-top: 3px solid transparent !important;
@@ -259,8 +224,7 @@ label {
   border-bottom: 3px solid transparent !important;
   box-shadow: none !important;
 }
-
-.bordertxt:hover {
+body .bordertxt:hover {
   border-bottom: 3px solid #d4ee3f !important;
 }
 
@@ -284,6 +248,10 @@ label {
   }
 
   .main-title {
-    font-size: 4rem !important;
+    font-size: 4.5rem !important;
+  }
+
+  .respad {
+    padding-top: 80px !important;
   }
 }
