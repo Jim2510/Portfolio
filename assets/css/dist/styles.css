@@ -13,12 +13,10 @@ body {
   /*Section one */
   /*HEADER*/
   /*SVGs */
+  /*BUTTON GITHUB PROJECT*/
   /*Works imgs*/
   /*Button*/
-  /* Animation */
-}
-body h1 {
-  font-size: 3em !important;
+  /* Animazioni onde */
 }
 body .texthover {
   color: white;
@@ -26,14 +24,14 @@ body .texthover {
   border-radius: 50%;
 }
 body .iconhover:hover {
-  color: #d4ee3f;
+  color: #2a78d1;
   transition: color 0.3s;
 }
 body .texthover:hover {
-  background: #D4EE3F;
-  background: -moz-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
-  background: -webkit-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
-  background: radial-gradient(ellipse at center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
+  background: #2a78d1;
+  background: -moz-radial-gradient(center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
+  background: -webkit-radial-gradient(center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
+  background: radial-gradient(ellipse at center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
   color: #000000;
   -webkit-box-shadow: 0px 0px 10px 5px #00000096;
   box-shadow: 0px 0px 10px 5px #00000096;
@@ -48,10 +46,10 @@ body .bnc {
   border-radius: 50%;
 }
 body .bnc:hover {
-  background: #D4EE3F;
-  background: -moz-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
-  background: -webkit-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
-  background: radial-gradient(ellipse at center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
+  background: #2a78d1;
+  background: -moz-radial-gradient(center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
+  background: -webkit-radial-gradient(center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
+  background: radial-gradient(ellipse at center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
   -webkit-box-shadow: 0px 0px 10px 5px #00000096;
   box-shadow: 0px 0px 10px 5px #00000096;
 }
@@ -71,7 +69,7 @@ body .head-banner {
   padding-top: 8rem;
   padding-bottom: 8rem;
   background: #bdbdbd;
-  background: linear-gradient(to right, #005bc4 0%, #02dbb3 19%, #c9791d 40%, #f5be3e 60%, #aa0b8d 83%, #005bc4 100%);
+  background: linear-gradient(to right, #c400a3 0%, #f80000 19%, #ff9925 40%, #f5be3e 60%, #0baa88 83%, #c400a3 100%);
   background-size: 10000px 100%;
   animation: head-banner 15s linear infinite;
   background-attachment: fixed;
@@ -87,10 +85,10 @@ body .head-banner {
 }
 body .main-title {
   letter-spacing: 0;
-  font-size: 45px !important;
+  font-size: 45px;
 }
 body .gian {
-  color: #b4ee14 !important;
+  color: #2a78d1 !important;
 }
 body .bgc {
   background-color: #bdbdbd;
@@ -116,7 +114,7 @@ body .buttonGit {
 }
 body .buttonGit:hover {
   color: black;
-  background: #d4ee3f;
+  background: #2a78d1;
   transition: ease 0.3s;
 }
 body .imgprg {
@@ -144,7 +142,7 @@ body .vio {
   color: #6d6d6d;
 }
 body .animate-charcter {
-  background-image: linear-gradient(-225deg, #c2c2c2 30%, #ffffff 50%, #ffffff 70%, #c2c2c2 100%) !important;
+  background-image: linear-gradient(-225deg, #c7cdff 30%, #ffffff 50%, #ffffff 70%, #c7cdff 100%) !important;
   background-size: auto auto !important;
   background-clip: border-box !important;
   background-size: 200% auto !important;
@@ -153,14 +151,6 @@ body .animate-charcter {
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   animation: textclip 3s linear infinite !important;
-}
-body .blr {
-  filter: blur(2px);
-  transition: linear 0.8s;
-  border-radius: 50%;
-}
-body .blr:hover {
-  filter: blur(0);
 }
 body label {
   font-size: 2em;
@@ -178,7 +168,6 @@ body .waves {
   width: 100%;
   height: 15vh;
   margin-bottom: -7px;
-  /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
 }
@@ -224,8 +213,8 @@ body .bordertxt {
   border-bottom: 3px solid transparent !important;
   box-shadow: none !important;
 }
-body .bordertxt:hover {
-  border-bottom: 3px solid #d4ee3f !important;
+body .bordertxt:hover, body .bordertxt:focus {
+  border-bottom: 3px solid #2a78d1 !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -248,7 +237,7 @@ body .bordertxt:hover {
   }
 
   .main-title {
-    font-size: 4.5rem !important;
+    font-size: 70px !important;
   }
 
   .respad {

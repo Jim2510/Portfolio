@@ -4,6 +4,7 @@ $height: 400;
 $percent: .69444%;
 $dotSize: .9;
 $bgWidth: 10000px;
+$mainGreen: #2a78d1;
 
 * {
     margin: 0;
@@ -16,14 +17,7 @@ html {
 }
 
 body {
-    // font-family: 'Bebas Neue', cursive !important;
-    // font-size: 1.3em !important;
     scrollbar-width: 0;
-
-    h1 {
-        // font-family: 'Squada One', cursive;
-        font-size: 3em !important;
-    }
 
 
     .texthover {
@@ -34,15 +28,15 @@ body {
     }
 
     .iconhover:hover {
-        color: #d4ee3f;
+        color: $mainGreen;
         transition: color 0.3s;
     }
 
     .texthover:hover {
-        background: #D4EE3F;
-        background: -moz-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
-        background: -webkit-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
-        background: radial-gradient(ellipse at center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
+        background: $mainGreen;
+        background: -moz-radial-gradient(center, $mainGreen 0%, $mainGreen 31%, #000000 100%);
+        background: -webkit-radial-gradient(center, $mainGreen 0%, $mainGreen 31%, #000000 100%);
+        background: radial-gradient(ellipse at center, $mainGreen 0%, $mainGreen 31%, #000000 100%);
         color: #000000;
         -webkit-box-shadow: 0px 0px 10px 5px #00000096;
         box-shadow: 0px 0px 10px 5px #00000096;
@@ -60,10 +54,10 @@ body {
     }
 
     .bnc:hover {
-        background: #D4EE3F;
-        background: -moz-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
-        background: -webkit-radial-gradient(center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
-        background: radial-gradient(ellipse at center, #D4EE3F 0%, #D4EE3F 31%, #000000 100%);
+        background: $mainGreen;
+        background: -moz-radial-gradient(center, $mainGreen 0%, $mainGreen 31%, #000000 100%);
+        background: -webkit-radial-gradient(center, $mainGreen 0%, $mainGreen 31%, #000000 100%);
+        background: radial-gradient(ellipse at center, $mainGreen 0%, $mainGreen 31%, #000000 100%);
         -webkit-box-shadow: 0px 0px 10px 5px #00000096;
         box-shadow: 0px 0px 10px 5px #00000096;
     }
@@ -73,14 +67,6 @@ body {
         box-shadow: inset 0px 0px 10px 5px #000000;
 
     }
-
-
-
-
-    //  .main-title {
-    // //     // font-family: 'Pacifico', cursive;
-    //     //   text-shadow: -3px 0 #000000, 0 3px #000000, 3px 0 #000000, 0 -3px #000000;
-    //  }
 
     .font {
         font-family: 'Rubik', sans-serif;
@@ -99,7 +85,7 @@ body {
         padding-top: 8rem;
         padding-bottom: 8rem;
         background: #bdbdbd;
-        background: linear-gradient(to right, #005bc4 0%, #02dbb3 19%, #c9791d 40%, #f5be3e 60%, #aa0b8d 83%, #005bc4 100%);
+        background: linear-gradient(to right, #c400a3 0%, #f80000 19%, #ff9925 40%, #f5be3e 60%, #0baa88 83%, #c400a3 100%);
         background-size: $bgWidth 100%;
         animation: head-banner 15s linear infinite;
         background-attachment: fixed;
@@ -119,14 +105,12 @@ body {
     }
 
     .main-title {
-        // font-family: 'Squada One', cursive !important;
         letter-spacing: 0;
-        font-size: 45px !important;
+        font-size: 45px;
     }
 
     .gian {
-        color: #b4ee14 !important;
-        // text-shadow: -2px 0 #000000, 0 2px #000000, 2px 0 #000000, 0 -2px #000000;
+        color: $mainGreen !important;
     }
 
     .bgc {
@@ -155,7 +139,7 @@ body {
         height: 300px;
     }
 
-    //BUTTON GITHUB PROJECT
+    /*BUTTON GITHUB PROJECT*/
     .buttonGit {
         border: 3px black solid;
         border-radius: 20px;
@@ -165,7 +149,7 @@ body {
 
     .buttonGit:hover {
         color: black;
-        background: #d4ee3f;
+        background: $mainGreen;
         transition: ease 0.3s;
     }
 
@@ -203,19 +187,13 @@ body {
         color: #6d6d6d
     }
 
-    // .contacts {
-    //     background: url(/imgs/cnt.png) no-repeat transparent;
-    //     background-position: center;
-    //     background-size: cover;
-    // }
-
 
     .animate-charcter {
         background-image: linear-gradient(-225deg,
-                #c2c2c2 30%,
+                #c7cdff 30%,
                 #ffffff 50%,
                 #ffffff 70%,
-                #c2c2c2 100%) !important;
+                #c7cdff 100%) !important;
         background-size: auto auto !important;
         background-clip: border-box !important;
         background-size: 200% auto !important;
@@ -225,17 +203,7 @@ body {
         -webkit-text-fill-color: transparent !important;
         animation: textclip 3s linear infinite !important;
     }
-
-    .blr {
-        filter: blur(2px);
-        transition: linear 0.8s;
-        border-radius: 50%;
-    }
-
-    .blr:hover {
-        filter: blur(0);
-    }
-
+    
     label {
         font-size: 2em;
     }
@@ -255,7 +223,6 @@ body {
         width: 100%;
         height: 15vh;
         margin-bottom: -7px;
-        /*Fix for safari gap*/
         min-height: 100px;
         max-height: 150px;
     }
@@ -267,7 +234,7 @@ body {
         background-color: #feffde6b;
     }
 
-    /* Animation */
+    /* Animazioni onde */
 
     .parallax>use {
         animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
@@ -303,7 +270,7 @@ body {
         }
     }
 
-    //Animazione form
+    //bordi form contatti
     .bordertxt {
         border: none;
         transition: color 0.5s;
@@ -314,9 +281,10 @@ body {
         box-shadow: none !important;
     }
 
-    .bordertxt:hover {
-        border-bottom: 3px solid #d4ee3f !important;
+    .bordertxt:hover, .bordertxt:focus {
+        border-bottom: 3px solid $mainGreen !important;
     }
+
 
 }
 
@@ -345,7 +313,7 @@ body {
     }
 
     .main-title {
-        font-size: 4.5rem !important;
+        font-size: 70px !important;
     }
 
     .respad {
