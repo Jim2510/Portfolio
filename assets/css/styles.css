@@ -12,9 +12,7 @@ body {
   scrollbar-width: 0;
   /*Section one */
   /*HEADER*/
-  /*SVGs */
   /*BUTTON GITHUB PROJECT*/
-  /*Works imgs*/
   /*Button*/
   /* Animazioni onde */
 }
@@ -88,6 +86,9 @@ body .main-title {
   letter-spacing: 0;
   font-size: 45px;
 }
+body .title {
+  text-shadow: 3px 5px 2px #474747;
+}
 body .gian {
   color: #2a78d1 !important;
 }
@@ -100,13 +101,6 @@ body .display-images .imgs {
 body .display-images .txt {
   padding: 3rem;
 }
-body .imgwrk {
-  background: url(/imgs/undraw_digital_nomad_re_w8uy.svg) no-repeat transparent;
-  background-size: contain;
-  background-position: center;
-  width: 200px;
-  height: 300px;
-}
 body .buttonGit {
   border: 3px black solid;
   border-radius: 20px;
@@ -117,19 +111,6 @@ body .buttonGit:hover {
   color: black;
   background: #2a78d1;
   transition: ease 0.3s;
-}
-body .imgprg {
-  background: url(/imgs/undraw_progress_overview_re_tvcl.svg) no-repeat transparent;
-  background-size: contain;
-  background-position: center;
-  width: 200px;
-  height: 300px;
-}
-body .work {
-  background: #fff;
-}
-body .work img {
-  width: 100%;
 }
 body .btn {
   border: 2px solid rgb(82, 82, 82) !important;
@@ -238,6 +219,7 @@ body .bordertxt {
   border-left: 3px solid transparent !important;
   border-bottom: 3px solid transparent !important;
   box-shadow: none !important;
+  background: #fff;
 }
 body .bordertxt:hover, body .bordertxt:focus {
   border-bottom: 3px solid #2a78d1 !important;

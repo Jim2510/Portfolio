@@ -1,8 +1,3 @@
-$total: 144;
-$time: 4;
-$height: 400;
-$percent: .69444%;
-$dotSize: .9;
 $bgWidth: 10000px;
 $mainGreen: #2a78d1;
 
@@ -19,7 +14,7 @@ html {
 body {
     scrollbar-width: 0;
 
-
+/*BUTTONS ANIMATION*/
     .texthover {
         color: white;
         transition: ease-in 0.3s;
@@ -68,11 +63,12 @@ body {
 
     }
 
+    /*FONT NAVBAR*/
     .font {
         font-family: 'Rubik', sans-serif;
     }
 
-    /*Section one */
+    /*FIRST SECTION*/
     .icon-section {
         padding-top: 7rem;
         padding-bottom: 7rem;
@@ -109,6 +105,10 @@ body {
         font-size: 45px;
     }
 
+    .title {
+        text-shadow: 3px 5px 2px #474747;
+    }
+
     .gian {
         color: $mainGreen !important;
     }
@@ -130,15 +130,6 @@ body {
 
     }
 
-    /*SVGs */
-    .imgwrk {
-        background: url(/imgs/undraw_digital_nomad_re_w8uy.svg) no-repeat transparent;
-        background-size: contain;
-        background-position: center;
-        width: 200px;
-        height: 300px;
-    }
-
     /*BUTTON GITHUB PROJECT*/
     .buttonGit {
         border: 3px black solid;
@@ -153,26 +144,7 @@ body {
         transition: ease 0.3s;
     }
 
-    .imgprg {
-        background: url(/imgs/undraw_progress_overview_re_tvcl.svg) no-repeat transparent;
-        background-size: contain;
-        background-position: center;
-        width: 200px;
-        height: 300px;
-    }
-
-
-    /*Works imgs*/
-    .work {
-        background: #fff;
-
-        img {
-            width: 100%;
-            // height: 300px;
-        }
-    }
-
-    /*Button*/
+    /*BUTTONS*/
     .btn {
         border: 2px solid rgb(82, 82, 82) !important;
     }
@@ -187,7 +159,7 @@ body {
         color: #6d6d6d
     }
 
-
+    /*WAVES*/
     .animate-charcter {
         background-image: linear-gradient(-225deg,
                 #c7cdff 30%,
@@ -270,7 +242,7 @@ body {
         }
     }
 
-    //bordi form contatti
+    /*BORDER FORM*/
     .bordertxt {
         border: none;
         transition: color 0.5s;
@@ -279,6 +251,7 @@ body {
         border-left: 3px solid transparent !important;
         border-bottom: 3px solid transparent !important;
         box-shadow: none !important;
+        background: #fff;
     }
 
     .bordertxt:hover, .bordertxt:focus {

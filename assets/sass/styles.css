@@ -10,11 +10,15 @@ html {
 
 body {
   scrollbar-width: 0;
-  /*Section one */
+  /*BUTTONS ANIMATION*/
+  /*FONT NAVBAR*/
+  /*FIRST SECTION*/
   /*HEADER*/
   /*BUTTON GITHUB PROJECT*/
-  /*Button*/
+  /*BUTTONS*/
+  /*WAVES*/
   /* Animazioni onde */
+  /*BORDER FORM*/
 }
 body .texthover {
   color: white;
@@ -27,15 +31,11 @@ body .iconhover:hover {
 }
 body .texthover:hover {
   background: #2a78d1;
-  background: -moz-radial-gradient(center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
-  background: -webkit-radial-gradient(center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
   background: radial-gradient(ellipse at center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
   color: #000000;
-  -webkit-box-shadow: 0px 0px 10px 5px #00000096;
-  box-shadow: 0px 0px 10px 5px #00000096;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5882352941);
 }
 body .texthover:active {
-  -webkit-box-shadow: inset 0px 0px 10px 5px #000000;
   box-shadow: inset 0px 0px 10px 5px #000000;
 }
 body .bnc {
@@ -45,14 +45,10 @@ body .bnc {
 }
 body .bnc:hover {
   background: #2a78d1;
-  background: -moz-radial-gradient(center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
-  background: -webkit-radial-gradient(center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
   background: radial-gradient(ellipse at center, #2a78d1 0%, #2a78d1 31%, #000000 100%);
-  -webkit-box-shadow: 0px 0px 10px 5px #00000096;
-  box-shadow: 0px 0px 10px 5px #00000096;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5882352941);
 }
 body .bnc:active {
-  -webkit-box-shadow: inset 0px 0px 10px 5px #000000;
   box-shadow: inset 0px 0px 10px 5px #000000;
 }
 body .font {
@@ -69,9 +65,18 @@ body .head-banner {
   background: #bdbdbd;
   background: linear-gradient(to right, #c400a3 0%, #f80000 19%, #ff9925 40%, #f5be3e 60%, #0baa88 83%, #c400a3 100%);
   background-size: 10000px 100%;
-  animation: head-banner 15s linear infinite;
+  -webkit-animation: head-banner 15s linear infinite;
+          animation: head-banner 15s linear infinite;
   background-attachment: fixed;
   background-blend-mode: color-burn;
+}
+@-webkit-keyframes head-banner {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 10000px;
+  }
 }
 @keyframes head-banner {
   0% {
@@ -112,9 +117,11 @@ body .buttonGit:hover {
   transition: ease 0.3s;
 }
 body .btn {
-  border: 2px solid #525252 !important;
+  border: 2px solid rgb(82, 82, 82) !important;
 }
 body .prgss {
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
   height: fit-content !important;
   border-radius: 0 !important;
   background: #fff;
@@ -131,13 +138,19 @@ body .animate-charcter {
   background-clip: text !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
-  animation: textclip 3s linear infinite !important;
+  -webkit-animation: textclip 3s linear infinite !important;
+          animation: textclip 3s linear infinite !important;
 }
 body label {
   font-size: 2em;
 }
 body .bg1 {
   background-color: #DDFFBC;
+}
+@-webkit-keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 @keyframes textclip {
   to {
@@ -156,26 +169,43 @@ body .content {
   position: relative;
   height: 20vh;
   text-align: center;
-  background-color: #feffde6b;
+  background-color: rgba(254, 255, 222, 0.4196078431);
 }
 body .parallax > use {
-  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
 body .parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
 }
 body .parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
 }
 body .parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
 }
 body .parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+@-webkit-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
 }
 @keyframes move-forever {
   0% {
@@ -204,25 +234,20 @@ body .bordertxt:hover, body .bordertxt:focus {
     height: 40px;
     min-height: 40px;
   }
-
   .content {
     height: 30vh;
   }
-
   .head-banner {
     padding-top: 12rem;
     padding-bottom: 12rem;
   }
-
   .display-images .txt {
     padding: 7rem;
   }
-
   .main-title {
     font-size: 70px !important;
   }
-
   .respad {
     padding-top: 80px !important;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
